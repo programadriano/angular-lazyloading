@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor="let product of products">
+      <div class="card">
+        <img class="card-img-top" src="{{product.thumb}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text category">{{product.category}}</p>
+          <p class="card-text title">{{product.name}}</p>
+          <p class="card-text price">R$ {{product.price}},00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
